@@ -1,9 +1,8 @@
 ﻿# RxJS-Microsoft Graph
-
-!['screen shot'](screenshot.png)
-
 ## About
 This is a starting point for building [RxJS-based](http://reactivex.io/rxjs/) web apps that talk to the [Microsoft Graph API](https://graph.microsoft.com). This provides an observable set of wrappers on top of MSAL APIs for signing a user in, and provides an observable that emits access tokens for the Microsoft Graph API. In this sample app, these tokens are used to fetch emails using the Graph /messages endpoint.
+
+!['screen shot'](screenshot.png)
 
 ## What is RxJS?
 [Reactive JS](http://reactivex.io/rxjs/) is an asynchronous programming paradigm in which app events are modeled as 'observables' or streams. Your app's logic becomes operations on observables - filtering, merging, chaining and subscribing to such streams.
