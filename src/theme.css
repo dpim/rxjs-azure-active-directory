@@ -17,12 +17,21 @@ td {
     text-align: center
 }
 
+th {
+    padding: 1em;
+}
+
 tr:nth-child(even) 
     {background-color: #f2f2f2;}
 
 .container {
     width: 75%;
     margin: 1em;
+}
+
+.mailbtn {
+    margin-top: 1em;
+    margin-bottom: 2em;
 }
 
 .mailcontainer {

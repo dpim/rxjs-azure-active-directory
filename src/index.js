@@ -72,6 +72,7 @@ const tokenStream = userAuthStream.map((response, err) => {
         return Rx.Observable.never();
     }
 });
+
 //stream of respones from Graph API
 const responseStream = tokenStream.flatMap((token)=>{
     const headers = {"Authorization": "Bearer "+token.value};
