@@ -18,7 +18,7 @@ const windowHashChangeStream = Rx.Observable.fromEvent(window, 'hashchange');
 
 const userStream = Rx.Observable.of(userAgentApplication.getUser());
 
-const authorizedStream = userStream.flatMap((user)=>{
+const authorizedStream = userStream.flatMap((user) => {
     showSignedOutState();
     if (user){
         return Rx.Observable.fromPromise(userAgentApplication.acquireTokenSilent(graphAPIScopes));
