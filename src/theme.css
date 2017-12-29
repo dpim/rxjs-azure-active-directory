@@ -3,14 +3,13 @@ body {
 }
 
 a {
-    display: inline-block;
     position: relative;
     text-decoration: none;
+    margin-top: 1em;
 }
 
 h2 {
-    display: inline-block;
-    margin-right: 1em;
+    clear: both;
 }
 
 td {
@@ -24,23 +23,42 @@ th {
 tr:nth-child(even) 
     {background-color: #f2f2f2;}
 
-.container {
+#header {
+    display: inline-block;
+    padding: 1em;
+}
+
+#container {
     width: 75%;
     margin: 1em;
 }
 
-.mailbtn {
-    margin-top: 1em;
-    margin-bottom: 2em;
+#signContainer {
+    display: block;
 }
 
-.mailcontainer {
+#mailButton {
+    margin-left: 1em;
+}
+#mailContainer {
     background:white;
 }
 
-.mailtable {
+#mailTable {
+    margin-top: 2em;
     width: 100%;
     display: table;
     border-collapse:collapse;
     table-layout: fixed;
 }
+
+.signButton {
+    float: left;
+    margin-top: 1em;
+}
+
+.hidden {
+    visibility: hidden;
+    width: 0px;
+}
+
